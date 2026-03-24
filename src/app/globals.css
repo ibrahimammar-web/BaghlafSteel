@@ -12,3 +12,13 @@
     @apply bg-background text-foreground antialiased font-cairo;
   }
 }
+
+@layer components {
+  .nav-active {
+    @apply text-red-600 font-bold border-b-2 border-red-600 pb-0.5;
+  }
+
+  .nav-inactive {
+    @apply text-gray-600 hover:text-gray-900;
+  }
+}

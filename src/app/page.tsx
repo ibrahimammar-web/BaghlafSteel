@@ -1,7 +1,10 @@
+import PageHero from "@/components/ui/PageHero";
+
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <p className="text-foreground text-xl font-cairo">مرحباً بك</p>
-    </main>
+    <PageHero
+      title="مرحباً بك"
+      description="نقدم لك أفضل الحلول المالية المتوافقة مع أحكام الشريعة الإسلامية. اكتشف منتجاتنا وخدماتنا المصممة خصيصاً لتلبية احتياجاتك."
+    />
   );
 }
