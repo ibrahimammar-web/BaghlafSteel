@@ -1,11 +1,21 @@
-export type ProductCategory = "rebar" | "sheet" | "pipe" | "beam" | "coil";
+export type ProductCategory =
+    | "rebar"
+    | "billet"
+    | "rails"
+    | "cold_coil"
+    | "hot_coil"
+    | "galvanized_coil";
+
+export interface LocalizedString {
+    ar: string;
+    en: string;
+}
 
 export interface Product {
     id: string;
-    name: string;
+    name: LocalizedString;
     category: ProductCategory;
     pricePerTon: number;
-    thickness: number | null;
-    length: number | null;
-    description: string;
+    description: LocalizedString;
+    image: string;
 }
